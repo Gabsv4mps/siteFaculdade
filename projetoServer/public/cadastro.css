@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.cadastroBody{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.cadastroInputs{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.cadastroInputs input{
+    margin-top: 8px;
+}
+
+.cadastroInputs button{
+    margin-top: 24px;
+}

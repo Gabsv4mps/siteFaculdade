@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "/cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "cadastroBody">
+        
+        <div class = "cadastroInputs">
+         <form method = "post" id = "cadastroForm">
+            <label for = "cadastroNome">Nome do produto:</label>
+            <input type="text" id = "cadastroNome" placeholder="Insira o nome do produto"/>
+            
+
+            <label for = "cadastroClassificacao">Classificacao do produto:</label>
+            <select id = "cadastroClassificacao">
+                <option value = "Mobile">Mobile</option>
+                <option value="Informática">Informática</option>
+                <option value="Acessórios">Acessórios</option>
+                <option value="SmartThings">SmartThings</option>
+            </select>
+
+            <label for ="cadastroQnt">Quantidade do produto:</label>
+            <input type="number" id="cadastroQnt" placeholder="insira a quantidade do produto">
+
+            <label for = "cadastroPreco">Preço do produto: </label>
+            <input type="text" id = "cadastroPreco" placeholder="Insira o preco do produto"/>
+
+            
+            <button type="submit" id="enviaCadastro">Cadastrar produto</button>
+        </form>
+        </div>
+       
+    </div>
+
+<script src ="cadastro.js"></script>
+</body>
+</html>
