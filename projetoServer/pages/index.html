@@ -6,12 +6,12 @@
     <link rel = "stylesheet" type = "text/css" href = "/Formatations.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <title>E-Commerce</title>
+    <link rel = "icon" href = "AtomLogoNav.png">
+    <title>Attom!</title>
 </head>
 <body>
     <header>
-            <a href = "#" id = "logo"></a>
+            <a href = "#" id = "logo"><img src = "/AtomLogoNav.png" width = "100px" height="100px"></a>
             <nav>
                 <div class = "nav-items">
                     <a href  = "#" >Shop</a>
@@ -37,7 +37,7 @@
                     <a href = "#"><i class='bx bxs-cart' ></i></a>
                     </div>
                     <div class = "user">
-                    <a href = "#"><i class='bx bx-user' ></i></a>
+                    <a href = "http://localhost:3000/login"><i class='bx bx-user' ></i></a>
                     </div>
                 
                 </div>
@@ -48,56 +48,13 @@
 
     <aside></aside>
     <main>
-        
-        <div class = "carrossel">
-            <div class="slider">
-
-                <div class="slides">
-                    <!--Botoes Radio-->
-                    <input type="radio" name = "radio-button" id = "radio1">
-                    <input type="radio" name = "radio-button" id = "radio2">
-                    <input type="radio" name = "radio-button" id = "radio3">
-                    <input type="radio" name = "radio-button" id = "radio4">
-                    <!--Botoes Radio-->
-
-                    <!--Slides imagens-->
-                    <div class="slide first">
-                        <img src = "Slide1.jpg">
-                    </div>
-
-                    <div class="slide">
-                        <img src = "Slide2.jpg">
-                    </div>
-                    
-                    <div class="slide">
-                        <img src = "Slide3.jpg">
-                    </div>
-
-                    <div class="slide">
-                        <img src = "Slide4.png">
-                    </div>
-                    <!--Slides imagens-->
-
-                    <!--navegação-->
-                    <div class="navegacao-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
-
-              </div>
-
-                <div class="navegacao-manual">
-                    <label for = "radio1" class = "manual-btn"></label>
-                    <label for = "radio2" class = "manual-btn"></label>
-                    <label for = "radio3" class = "manual-btn"></label>
-                    <label for = "radio4" class = "manual-btn"></label>            
-                </div>
-
-            </div>
-        
+         <div class = "Imagem">
+           <video controls autoplay width = "100%" muted loop>
+            <source src = "/PropagandaAtom.mp4" type = "video/mp4">
+           </video>
         </div>
+
+       
         
 
         <div class = "produtos1">
@@ -177,8 +134,54 @@
 
         </div>
 
-        <div class = "Imagem">
-           <img src="imagem1.png">
+        <div class = "carrossel">
+            <div class="slider">
+
+                <div class="slides">
+                    <!--Botoes Radio-->
+                    <input type="radio" name = "radio-button" id = "radio1">
+                    <input type="radio" name = "radio-button" id = "radio2">
+                    <input type="radio" name = "radio-button" id = "radio3">
+                    <input type="radio" name = "radio-button" id = "radio4">
+                    <!--Botoes Radio-->
+
+                    <!--Slides imagens-->
+                    <div class="slide first">
+                        <img src = "Slide1.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src = "Slide2.jpg">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src = "Slide3.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src = "Slide4.png">
+                    </div>
+                    <!--Slides imagens-->
+
+                    <!--navegação-->
+                    <div class="navegacao-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+              </div>
+
+                <div class="navegacao-manual">
+                    <label for = "radio1" class = "manual-btn"></label>
+                    <label for = "radio2" class = "manual-btn"></label>
+                    <label for = "radio3" class = "manual-btn"></label>
+                    <label for = "radio4" class = "manual-btn"></label>            
+                </div>
+
+            </div>
+        
         </div>
 
         <div class = "produtos3">
@@ -364,6 +367,6 @@
 
         </div>
     </footer>
-    <script src = "JavasScripts.js"></script>
+    <script src = "/JavasScripts.js"></script>
 </body>
 </html>

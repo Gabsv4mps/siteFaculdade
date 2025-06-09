@@ -10,24 +10,73 @@ body{
     align-items:flex-end;
 }
 
+
+
 .cadastroBody{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(23,23,23);
+    padding: 2rem;
+    width: 80%;
+}
+
+#cadastroForm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.tituloCadastroProdutos{
+    display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: red;
-    border-radius: 8px;
-    padding: 24px;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    font-family: 'SamsungOne', arial, sans-serif;
 }
 
 .cadastroInputs{
-    display: flex;
-    flex-direction: column;
-    background-color: blue;
+    width: 100%;
+    background-color: #f6f6f6;
 }
 
 .cadastroInputs input{
-    margin-top: 8px;
+    height: 2rem;
+    width: 240px;
+    outline: none;
+    border: 0.75px solid gray;
+}
+
+.cadastroInputs select{
+    width: 240px;
+    height: 2rem;
+    border: 0.75px solid gray;
+    outline: none;
+}
+
+.cadastroInputs option{
+    height: 2rem;;
 }
 
 .cadastroInputs button{
-    margin-top: 24px;
+    border: 0.75px solid black;
+    background-color: black;
+    color: white;
+    height: 2rem;
+    border-radius: 16px;
+    width: 120px;
 }
+
+
+
+
+
+
+
+
+
+

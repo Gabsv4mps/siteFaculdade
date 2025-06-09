@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "/login.css">
+    <link rel = "icon" href = "AtomLogoNav.png">
+    <title>Attom!</title>
+</head>
+<body>
+    <div class = "novaConta">
+        <div class="novaContaTexto">
+
+        <h1>Bem vindo de volta!</h1>
+
+        <div class="titulo">
+            <a href = "http://localhost:3000">
+            <img src = "/AtomLogo1.png" width = "350px" height="350px">
+            </a>
+        </div>
+
+        <button>Entrar</button>
+        </div>
+        
+    </div>
+    <div class="cadastroUsuario">
+        <div class = "cadastroFormulario">
+            <h1>Cadastrar-se</h1>
+            <form method = "post" id = "cadastroForm">
+                
+                <label for = "usuarioCadastro" >Nome de usuario</label>
+                <input type="text" id = "usuarioCadastro" placeholder="Insira seu nome de usuario" required>
+                
+                <label for = "emailCadastro">Email de usuario</label>
+                <input type="email" id = "emailCadastro" placeholder="Insira seu e-mail" required>
+
+                <label for = "senhaCadastro">Senha de usuario</label>
+                <input type="password" id = "senhaCadastro" placeholder="Insira sua senha" required>
+
+                
+
+                <button type = "submit" id = "botaoLogin">Criar Conta</button>
+            </form>
+     </div>
+    </div>
+    
+<script src = "login.js"></script>
+</body>
+</html>

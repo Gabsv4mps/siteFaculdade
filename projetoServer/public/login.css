@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'SamsungOne', arial, sans-serif;
+}
+
+.cadastroFormulario h1{
+    position: absolute;
+    top: 0;
+    font-size:3rem;
+}
+
+
+
+.titulo{
+    text-align: center;
+    margin-bottom: 25%;
+}
+
+.titulo:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+.cadastroFormulario{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    background-color:#f6f6f6;
+}
+
+.cadastroUsuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:75%;
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+.novaConta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+}
+
+.novaContaTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    height: 70%;
+    color: white;
+    background-color: black;
+}
+
+.novaContaTexto button{
+    width: 50%;
+    height: 4rem;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2rem;
+    color: white;
+    font-size:20px;
+    
+}
+
+.novaContaTexto button:hover{
+    background-color: white;
+    color: black;
+}
+
+#cadastroForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#cadastroForm input{
+    width: 45vw;
+    height: 3rem;
+    border: none;
+    background-color: #f6f6f6;
+    border-bottom: 2px solid gray;
+    outline: none;
+    font-size: larger;
+    margin-bottom: 4rem;
+}
+
+#cadastroForm input::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 0;
+    transition: 0.5s;
+    height: 2px;
+    background-color: blue;
+}
+
+#cadastroForm input:hover{
+    border-bottom: 2px solid black;
+    transition: 0.5s;
+}
+
+
+
+
+#cadastroForm button{
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    width:50%;
+    height: 4rem;
+    font-size: 20px;
+}
+
+#cadastroForm button:hover{
+    background-color:#f6f6f6;
+    color: black;
+    border: 1px solid black;
+}

@@ -38,6 +38,10 @@ align-items: center;
 
 }
 
+#logo img{
+    margin-left: 25%;
+}
+
 .icones{
     display: flex;
     justify-content: space-around;
