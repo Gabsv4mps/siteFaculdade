@@ -15,15 +15,15 @@ class FolhaController {
             res.sendFile(path.join(__dirname, './pages/index.html'));
         })
 
-        this.app.get('/cadastro', (req, res) => { 
+        this.app.get('/cadastroProduto', (req, res) => { 
             res.sendFile(path.join(__dirname, './pages/cadastro.html'));
         })
 
-        this.app.post('/cadastro', (req, res) =>{   
+        this.app.post('/cadastroProduto', async (req, res) =>{   
             const dados = req.body;
             console.log(dados);
             // const sql = `insert into produtos(nome, categoria, quantidade, preco) values('${dados.nome}', '${dados.categoria}', '${dados.quantidade}', '${dados.preco}');`;
-            this.db.insert('produtos', ['nome', 'categoria', 'quantidade', 'preco'], [dados.nome, dados.categoria, dados.quantidade, dados.preco]).then(e =>{
+            await this.db.insert('produtos', ['nome', 'categoria', 'quantidade', 'preco'], [dados.nome, dados.categoria, dados.quantidade, dados.preco]).then(e =>{
                 console.log('valor inserido com sucesso!')
             })
 
@@ -34,19 +34,23 @@ class FolhaController {
         })
 
 
-        this.app.get('/login', (req, res) => {
+        this.app.get('/cadastro', (req, res) => {
 
             res.sendFile(path.join(__dirname, './pages/login.html'));
         })
 
-        this.app.post('/login', (req, res) =>{
+        this.app.post('/cadastro', async (req, res) =>{
             const informacoes = req.body;
-            console.log(req);
-            console.log(informacoes)
+            await this.db.insert('Usuarios', ['nome', 'email', 'senha'], [informacoes.usuario, informacoes.email, informacoes.senha])
             return res.status(201).json({
                 status: true,
                 message: "Usuario cadastrado!"
             });
+        })
+
+        this.app.get('/login', (req, res) => {
+            
+            res.sendFile(path.join(__dirname, './pages/loginUsuario.html'));
         })
 
         this.app.get('/produtos', (req, res) => {

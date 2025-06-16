@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" type = "text/css" href = "/login.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="loginFundo">
+        <div class="loginForm">
+            <div class="loginTitle">
+                <h1>Login</h1>
+            </div>
+            <form method = "POST" id = "formLogin">
+                <div class="inputTudo">
+                    <label for = "emailLogin">Nome de usuario</label>
+                    <div class="inputLogin">
+                        <i class='bx  bxs-user'></i> <input type = "email" id = "emailLogin"  placeholder = "insira seu email" required>
+                    </div>
+                </div>
+
+                <div class="inputTudo">
+                    <label for = "senhaLogin">Senha de usuario</label>
+                    <div class="inputLogin">      
+                        <i class='bx  bxs-lock'></i><input type="password" id ="senhaLogin" placeholder="Insira a sua senha" required>
+                    </div>
+                </div>
+               
+
+                <div class="radioConnect">
+                    <input type="radio" id = "manterConectado">
+                    <label for = "manterConectado">Lembrar de mim</label>
+                </div>
+
+                <div class="linha"></div>
+
+                <div class="loginFormas">
+                    <div class="formaLogin" id = "forma1"></div>
+                    <div class="formaLogin" id = "forma2"></div>
+                    <div class="formaLogin" id = "forma3"></div>
+                </div>
+                
+                <button type = "submit" id = "logaUsuario" class = "enviaLogin">Logar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
