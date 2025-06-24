@@ -19,6 +19,7 @@ body{
     background-color: rgb(23,23,23);
     padding: 3rem;
     width: 80%;
+    min-height: 100vh;
 }
 
 #cadastroForm{
@@ -136,7 +137,6 @@ select:hover, select:focus{
 
 .cadastroInputs option .icon {
   font-size: 1.6rem;
-  text-box: trim-both cap alphabetic;
 }
 
 .cadastroInputs selectedcontent .icon{
@@ -157,4 +157,98 @@ select:hover, select:focus{
     background-color: blue;
     color: white;
     border: 1px solid white;
+}
+
+.produtosCadastrados{
+    background-color: #f6f6f6;
+    width: 100%;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.tabela{
+    width: 100%;
+    border-radius: 8px;
+    border: 0.75px solid gray;
+    padding: 2rem;
+    font-family: 'Samsung One', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.tabela h1{
+    margin-bottom: 3%;
+}
+table{
+    width: 100%;
+    border-radius: 8px;
+    font-family: 'Samsung One', Arial, Helvetica, sans-serif;
+    border-spacing: 0;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+
+td{
+    height:5.5rem;
+    width: 16%;
+    text-align: center;
+    border: 0.2px solid gray;
+    background-color: #ddd;
+}
+
+#button1{
+    width: 3%;
+}
+
+#button2{
+    width: 3%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#tabelaImagem{
+    width: 3%;
+    height: 25px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#tabelaNome{
+    width: 81%; 
+    border-left: none;
+}
+
+#tabelaCategoria{
+    width: 5%;
+}
+
+#tabelaPreco{
+    width: 5%;
+}
+
+#editarProduto{
+    width: 6rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+}
+
+#excluirProduto{
+    width: 6rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
 }
