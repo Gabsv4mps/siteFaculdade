@@ -168,12 +168,24 @@ body{
     flex-direction: column;
 }
 
+
 .inputLogin{
     display: flex;
     align-items: center;
     height: 3rem;
     width: 30vw ;
-    background-color: white;
+    background-color: #e7e7e7;
+    border: 1px solid transparent;
+}
+
+.inputLogin:hover{
+    background-color: #e0e0e0;
+}
+
+
+.inputLogin:focus-within{
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .inputTudo{
@@ -196,14 +208,7 @@ body{
 
 .radioConnect{
     margin-top: 16px;
-
 }
-
-.radioConnect input{
-    border: none;
-    border-radius: 50%;
-}
-
 
 .linha{
     background-color: gray;

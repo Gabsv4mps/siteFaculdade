@@ -800,5 +800,6 @@ flex: 1 1 100vw;
 
 .cardDosItems img{
     width: 350px;
-    height: 350px;;
+    height: 350px;
+    object-fit: contain;
 }

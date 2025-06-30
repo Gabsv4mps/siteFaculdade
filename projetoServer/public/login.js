@@ -3,6 +3,9 @@ let nomeCadastro = document.getElementById("usuarioCadastro");
 let emailCadastro = document.getElementById("emailCadastro");
 let senhaCadastro = document.getElementById("senhaCadastro");
 
+document.getElementById('usuarioEntrar').addEventListener('click', function(){
+    window.location.href = "/login"
+})
 
 
 

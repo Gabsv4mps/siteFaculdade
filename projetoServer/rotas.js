@@ -95,7 +95,7 @@ class FolhaController {
             const { nome, categoria, preco, quantidade } = req.body
             
             try{
-                this.db.executeQuery(`update produtos set nome = ? set categoria = ? set preco = ? set quantidade = ? where id = ?`, [nome, categoria, preco, quantidade])
+                this.db.executeQuery(`update produtos set nome = "${nome}", categoria = "${categoria}", quantidade = "${quantidade}", preco = "${preco}" where id = "${idPut}"`)
                 res.status(200).json({message: `Produto ${idPut} atualizado com sucesso`})
             } catch(error){
                 console.error(error)

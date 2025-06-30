@@ -41,7 +41,7 @@ fetch(`/api/categoria/${categoria}`)
         console.error('erro ao buscar os produtos', error)
     })
 
-fetch('api/itens')
+fetch('/api/itens')
     .then(response => response.json())
     .then(produtosCadastrados => {
         const tabela = document.getElementById("produtosTable")
@@ -51,8 +51,8 @@ fetch('api/itens')
                         <td id = "tabelaImagem"><img src="data:image/jpeg;base64,${cadastro.imagem}"/></td>
                         <td id = "tabelaProduto">${cadastro.nome}</td>
                         <td id = "tabelaCategoria">${cadastro.categoria}</td>
-                        <td id = "tabelaPreco">${parseFloat(cadastro.preco).toFixed(2)}</td>
                         <td id = "tabelaQuantidade">${cadastro.quantidade}</td>
+                        <td id = "tabelaPreco">${parseFloat(cadastro.preco).toFixed(2)}</td>
                         <td id = "button1"><button class = "editarProduto" data-id = "${cadastro.id}">Editar</button></td>
                         <td id = "button2"><button class = "excluirProduto" data-id="${cadastro.id}">Excluir</button></td>
                     </tr>`;
@@ -106,6 +106,7 @@ fetch('api/itens')
                         body: JSON.stringify({
                             nome: novoNome,
                             categoria: novaCategoria,
+                            quantidade: novaQuantidade,
                             preco: novoPreco
                         })
                     })
