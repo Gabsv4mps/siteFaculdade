@@ -32,8 +32,9 @@ class DataBase{
   }
 
   async select(campos, table)
-  {    
-    await this.executeQuery(`select '${campos}' from ${table}`)
+  {   
+    const camposString = campos.join(', ') 
+    return await this.executeQuery(`select ${camposString} from ${table}`)
   }
 
   async insert(table, campos, values){
@@ -42,6 +43,7 @@ class DataBase{
     await this.executeQuery(`insert into ${table}(${camposString}) values("${valuesString}");`);
   }
   
+
 }
 
 // new DataBase().executeQuery('select * from produtos').then( (e) =>{

@@ -17,7 +17,7 @@ class cadastroUsuario{
     async mandarLogin(){
         const informacoes = this.loginDados();
         console.log(informacoes);
-        const req = await fetch("http://localhost:3000/login", {
+        const req = await fetch("http://localhost:3000/cadastro", {
             method: "POST",
             headers: {
             'Content-Type': 'application/json'

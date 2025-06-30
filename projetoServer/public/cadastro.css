@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@ body{
     align-items: center;
     background-color: rgb(23,23,23);
     padding: 3rem;
-    width: 80%;
+    width: 100%;
     min-height: 100vh;
 }
 
@@ -190,6 +191,10 @@ table{
     margin: 0 auto;
 }
 
+#produtosTable {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
 
 td{
     height:5.5rem;
@@ -216,6 +221,11 @@ td{
     border-bottom-left-radius: 8px;
 }
 
+#tabelaImagem img{
+    width: 100%;
+    object-fit: fill;
+}
+
 #tabelaNome{
     width: 81%; 
     border-left: none;
@@ -229,7 +239,7 @@ td{
     width: 5%;
 }
 
-#editarProduto{
+.editarProduto{
     width: 6rem;
     height: 3rem;
     border: none;
@@ -241,7 +251,7 @@ td{
     font-size: large;
 }
 
-#excluirProduto{
+.excluirProduto{
     width: 6rem;
     height: 3rem;
     border: none;
